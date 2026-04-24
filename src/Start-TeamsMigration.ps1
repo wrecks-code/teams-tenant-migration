@@ -159,7 +159,7 @@ Try-ConnectMgGraph -TenantShort $sourceTenant -Scopes @("Group.Read.All","Files.
 
 Write-Section "2) EXPORT – Blueprint"
 try{
-  Invoke-ScriptSafe "Export-Teams-Blueprint.ps1" @{
+  Invoke-ScriptSafe "Export-TeamsBlueprint.ps1" @{
     TeamName     = $teamName
     TenantShort  = $sourceTenant
     AppId        = $sourceAppId
@@ -171,7 +171,7 @@ try{
 
 Write-Section "3) EXPORT – Files"
 try{
-  Invoke-ScriptSafe "Export-Teams-Files.ps1" @{
+  Invoke-ScriptSafe "Export-TeamsFiles.ps1" @{
     TeamName     = $teamName
     TenantShort  = $sourceTenant
     AppId        = $sourceAppId
@@ -189,7 +189,7 @@ Try-ConnectMgGraph -TenantShort $destTenant -Scopes @("Group.ReadWrite.All","Fil
 
 Write-Section "5) IMPORT – Team Blueprint"
 try{
-  Invoke-ScriptSafe "Import-TeamBlueprint.ps1" @{
+  Invoke-ScriptSafe "Import-TeamsBlueprint.ps1" @{
     TeamName     = $teamName
     TenantShort  = $destTenant
     AppId        = $destAppId
@@ -201,7 +201,7 @@ try{
 
 Write-Section "6) IMPORT – Files (PnP, interaktiv erlaubt)"
 try{
-  Invoke-ScriptSafe "Import-TeamFiles-PnP_Interactive.ps1" @{
+  Invoke-ScriptSafe "Import-TeamsFiles.ps1" @{
     TeamName    = $teamName
     SourceRoot  = $exportRoot
     TenantShort = $destTenant
