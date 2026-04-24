@@ -1,5 +1,5 @@
 # === FULL TEAM DOWNLOAD (RECURSIVE, WITH RETRY & DELTA-SKIP) ===
-$TeamName = 'P0128-HO Dobritz'
+$TeamName = 'YOUR-TEAM-NAME'
 $DestRoot = '$env:USERPROFILE\Documents\Teams-Migration'
 
 Import-Module Microsoft.Graph.Groups -ErrorAction SilentlyContinue

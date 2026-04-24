@@ -1,5 +1,5 @@
 # === FULL TEAM DOWNLOAD (RECURSIVE, WITH RETRY & DELTA-SKIP) ===
-$TeamName = 'P0122-AY Schwandorf'
+$TeamName = 'YOUR-TEAM-NAME'
 $DestRoot = '$env:USERPROFILE\Documents\Teams-Migration'
 
 # Toggle: also pull ALL document libraries from the Team's SharePoint site

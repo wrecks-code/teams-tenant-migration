@@ -141,7 +141,7 @@ function Try-ConnectMgGraph([string]$TenantShort,[string[]]$Scopes){
 
 # ========= Eingaben =========
 Write-Section "Input sammeln"
-$teamName = Read-Host "Team/Group DisplayName (z.B. '00159-BP Rheintalautobahn')"
+$teamName = Read-Host "Team/Group DisplayName (z.B. 'Contoso-Projektteam')"
 if([string]::IsNullOrWhiteSpace($teamName)){ throw "TeamName darf nicht leer sein." }
 
 $exportRoot = Read-Host ("Export-Root (ENTER = {0})" -f $DefaultExportRoot); if([string]::IsNullOrWhiteSpace($exportRoot)){ $exportRoot = $DefaultExportRoot }
