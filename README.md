@@ -21,7 +21,7 @@ PowerShell scripts for migrating Microsoft Teams (structure + files) between two
 Run the orchestrator script and follow the prompts:
 
 ```powershell
-.\src\Run-Teams-Migration.ps1
+.\src\Start-TeamsMigration.ps1
 ```
 
 You will be asked for:
