@@ -1,0 +1,6 @@
+_Blueprints/
+_Logs/
+Teams/
+*.json
+*.csv
+*.log
